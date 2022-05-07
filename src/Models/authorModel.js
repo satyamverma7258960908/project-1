@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const authorSchema = new mongoose.Schema({
     fname: {
         type: String,
-        required: 'First name is required', //(sonu)
+        required: 'First name is required', //(sonu kumar rai)
         trim: true
     },
     lname: {
@@ -38,5 +38,3 @@ const authorSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('Author',authorSchema)//authors
 
-
-// { fname: { mandatory}, lname: {mandatory}, title: {mandatory, enum[Mr, Mrs, Miss]}, email: {mandatory, valid email, unique}, password: {mandatory} }
